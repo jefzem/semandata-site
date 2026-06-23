@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme DEMS® — Semandata</title>
+  <meta name="description" content="DEMS® — la plateforme de gouvernance sémantique non-statistique. SMM®, BER®, KVI®, DeCRIPT®, SAP Native. API REST agentique native.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark">Sm</div>
+      Semandata
+    </a>
+    <ul class="nav-links">
+      <li><a href="plateforme.html" class="active">Plateforme</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="temoignages.html">Témoignages</a></li>
+      <li><a href="entreprise.html">Entreprise</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="gotomarket.html">Partenaires</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="temoignages.html" class="btn btn-ghost" style="font-size:14px;padding:10px 18px;">Voir les résultats</a>
+      <a href="mailto:contact@semandata.com?subject=Demande de POV Semandata" class="btn btn-primary" style="font-size:14px;padding:10px 20px;">Demander un POV →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Page Hero ── -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">La plateforme</span>
+    <h1>DEMS® — Data Excellence<br>Management System</h1>
+    <p>Une plateforme sémantique non-statistique qui encode vos règles métier en langage naturel et les expose aux agents IA via API REST. Résultat déterministe. Zéro hallucination possible. Powered by Data Excellence Science® — 19 ans de R&D.</p>
+    <div style="display:flex;gap:12px;margin-top:32px;flex-wrap:wrap;">
+      <a href="mailto:contact@semandata.com?subject=Demande de démo DEMS" class="btn btn-primary btn-lg">Voir une démo DEMS® →</a>
+      <a href="#editions" class="btn btn-secondary btn-lg">Voir les éditions</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Principe fondateur ── -->
+<section class="section" style="background:var(--c-cream);">
+  <div class="container">
+    <div class="feature-grid">
+      <div>
+        <span class="section-label">Principe fondateur</span>
+        <h2 class="section-title">Déterministe, souverain, agentique.</h2>
+        <p class="section-subtitle">DEMS® n'est pas une application. C'est une plateforme. La différence : toutes ses fonctionnalités sont exposées via API REST et consommables par n'importe quel agent IA, n'importe quel système, en temps réel.</p>
+        <ul class="feature-list" style="margin-top:24px;">
+          <li><span class="feature-check">✦</span><strong>Non-statistique</strong> — le moteur SMM® ne fait pas d'inférence. Il raisonne sur des règles explicites. Résultat binaire : conforme ou non conforme. Pas de probabilité. Pas d'hallucination.</li>
+          <li><span class="feature-check">✦</span><strong>Souverain by design</strong> — DEMS® est déployé dans votre environnement. Vos données et règles ne quittent jamais votre périmètre. Ni vers GDE, ni vers Semandata, ni vers aucun tiers.</li>
+          <li><span class="feature-check">✦</span><strong>Agentique natif</strong> — conçu pour l'ère des agents avant que le terme existe. BER®, KVI®, DEI® : tout est interrogeable en REST. Vos agents décident dans le cadre que vous avez défini.</li>
+          <li><span class="feature-check">✦</span><strong>SaaS géré</strong> — mises à jour transparentes. Aucune charge d'administration. SLA contractuel sur 3 niveaux.</li>
+        </ul>
+      </div>
+      <div class="dashboard-mockup" style="max-width:100%;">
+        <div class="mockup-topbar">
+          <div class="mockup-dots">
+            <div class="dot-red"></div><div class="dot-orange"></div><div class="dot-green"></div>
+          </div>
+          <div class="mockup-title">DEMS® API Console</div>
+        </div>
+        <div class="mockup-body">
+          <div class="code-block" style="font-size:13px;line-height:1.8;">
+            <div class="code-comment"># Vérification d'une règle BER® par un agent</div>
+            <div class="code-get">GET /api/v2/ber/check</div>
+            <div>&nbsp;&nbsp;?entity=invoice</div>
+            <div>&nbsp;&nbsp;&entity=amount=142500</div>
+            <div>&nbsp;&nbsp;&rule_set=FINANCE_COMPLIANCE</div>
+            <br>
+            <div class="code-comment"># Réponse DEMS® — déterministe</div>
+            <div>{</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"compliant"</span>: <span class="code-bool">false</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"rule_violated"</span>: <span class="code-string">"BER-FIN-047"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"reason"</span>: <span class="code-string">"Montant > seuil validation N+2 requis"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"kvi_risk"</span>: <span class="code-val">8400</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"confidence"</span>: <span class="code-val">1.0</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"trace_id"</span>: <span class="code-string">"dem-20260623-9941"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"action_required"</span>: <span class="code-string">"ESCALATE_APPROVAL"</span></div>
+            <div>}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Modules détaillés ── -->
+<section class="section" id="smm">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Les modules DEMS®</span>
+      <h2 class="section-title">Six modules. Une IP déposée. Un référentiel universel.</h2>
+    </div>
+
+    <!-- SMM -->
+    <div class="feature-grid" style="margin-top:64px;">
+      <div>
+        <div class="module-icon blue" style="width:56px;height:56px;font-size:28px;margin-bottom:20px;">🧠</div>
+        <h3 style="font-size:28px;font-weight:900;color:var(--c-heading);letter-spacing:-1px;margin-bottom:12px;">SMM® — Semantic Meta Model</h3>
+        <p style="font-size:16px;color:var(--c-caption);line-height:1.7;margin-bottom:20px;">L'ontologie universelle des données d'entreprise. Le SMM® crée une langue commune entre tous vos systèmes hétérogènes — SAP, Salesforce, ERP custom, bases de données legacy. Chaque entité, relation et attribut reçoit un sens partagé, défini par le métier, pas par l'informatique.</p>
+        <ul class="feature-list">
+          <li><span class="feature-check">✦</span> Moteur <strong>non-statistique</strong> — résultat déterministe ou absence de résultat. Zéro hallucination structurellement impossible.</li>
+          <li><span class="feature-check">✦</span> Alignement automatique des <strong>entités sémantiques</strong> entre systèmes disparates.</li>
+          <li><span class="feature-check">✦</span> Compatible SAP nativement (30 000 tables connues), Oracle, Microsoft Dynamics, Salesforce.</li>
+          <li><span class="feature-check">✦</span> Fondement de toute la couche BER®, KVI® et DEI®.</li>
+        </ul>
+      </div>
+      <div style="background:var(--c-blue50);border-radius:var(--r-xl);padding:32px;border:1px solid var(--c-blue100);">
+        <div style="font-size:13px;font-weight:700;color:var(--c-blue700);margin-bottom:20px;text-transform:uppercase;letter-spacing:1px;">SMM® en action</div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="background:white;border-radius:var(--r-md);padding:16px;border:1px solid var(--c-grey200);">
+            <div style="font-size:12px;font-weight:700;color:var(--c-caption);margin-bottom:4px;">SYSTÈME SAP</div>
+            <div style="font-weight:700;color:var(--c-heading);">KUNNR = 0000140021</div>
+          </div>
+          <div style="text-align:center;font-size:20px;color:var(--c-blue700);">↕ SMM® résolution sémantique</div>
+          <div style="background:white;border-radius:var(--r-md);padding:16px;border:1px solid var(--c-grey200);">
+            <div style="font-size:12px;font-weight:700;color:var(--c-caption);margin-bottom:4px;">SYSTÈME CRM SALESFORCE</div>
+            <div style="font-weight:700;color:var(--c-heading);">Account_ID = SF-EU-00821</div>
+          </div>
+          <div style="text-align:center;font-size:20px;color:var(--c-green);">↓ Entité unifiée</div>
+          <div style="background:var(--c-blue700);border-radius:var(--r-md);padding:16px;">
+            <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);margin-bottom:4px;">ENTITÉ SMM® UNIFIÉE</div>
+            <div style="font-weight:800;color:white;font-size:18px;">Client "Lafarge SA"</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px;">Confiance : 1.0 · Souveraineté : ✓</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border:none;border-top:1px solid var(--c-grey200);margin:64px 0;" id="ber">
+
+    <!-- BER -->
+    <div class="feature-grid">
+      <div style="background:var(--c-grey50);border-radius:var(--r-xl);padding:32px;border:1px solid var(--c-grey200);">
+        <div class="ber-panel-title">3 types de règles BER®</div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px;">
+          <div class="ber-rule"><span class="ber-icon">🏢</span>
+            <div><div class="ber-rule-title">Règles internes business</div>
+            <div class="ber-rule-text">Politique prix, validation approbation, règles qualité, processus RH — définies et maintenues par vos équipes métier, en français, sans code.</div></div>
+          </div>
+          <div class="ber-rule"><span class="ber-icon">📐</span>
+            <div><div class="ber-rule-title">Standards sectoriels</div>
+            <div class="ber-rule-text">ISO 9001, IATF 16949, BRC Food Safety, standards bancaires — référentiels sectoriels pré-chargés et actualisés.</div></div>
+          </div>
+          <div class="ber-rule"><span class="ber-icon">⚖️</span>
+            <div><div class="ber-rule-title">Obligations réglementaires</div>
+            <div class="ber-rule-text">RGPD, AI Act, DORA, NIS2, BCBS 239 — traduits en règles BER® interrogeables par les agents IA en temps réel.</div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="module-icon indigo" style="width:56px;height:56px;font-size:28px;margin-bottom:20px;">📋</div>
+        <h3 style="font-size:28px;font-weight:900;color:var(--c-heading);letter-spacing:-1px;margin-bottom:12px;">BER® — Business Excellence Requirements</h3>
+        <p style="font-size:16px;color:var(--c-caption);line-height:1.7;margin-bottom:20px;">Les règles métier de l'entreprise en langage naturel. Interprétables sans traduction technique par les dirigeants, les juristes, les contrôleurs — ET par les agents IA. Une règle modifiée par le métier est propagée instantanément à tous les agents via API.</p>
+        <ul class="feature-list">
+          <li><span class="feature-check">✦</span> Édition en langage naturel — aucune compétence technique requise pour créer ou modifier une règle.</li>
+          <li><span class="feature-check">✦</span> Versioning complet — chaque modification est tracée, horodatée, réversible.</li>
+          <li><span class="feature-check">✦</span> Propagation instantanée — une règle modifiée est active sur tous les agents en temps réel.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border:none;border-top:1px solid var(--c-grey200);margin:64px 0;" id="kvi">
+
+    <!-- KVI -->
+    <div class="feature-grid">
+      <div>
+        <div class="module-icon green" style="width:56px;height:56px;font-size:28px;margin-bottom:20px;">💶</div>
+        <h3 style="font-size:28px;font-weight:900;color:var(--c-heading);letter-spacing:-1px;margin-bottom:12px;">KVI® — Key Value Indicators</h3>
+        <p style="font-size:16px;color:var(--c-caption);line-height:1.7;margin-bottom:20px;">Ce qui n'est pas conforme a un prix. Les KVI® expriment la non-conformité en euros — pas en pourcentage de complétude. C'est la différence entre un rapport data et une décision de Comex. Le risque invisible devient un actif gérable.</p>
+        <ul class="feature-list">
+          <li><span class="feature-check">✦</span> Valorisation monétaire de chaque écart de conformité — en temps réel, chaque matin.</li>
+          <li><span class="feature-check">✦</span> Hiérarchisation automatique des priorités par valeur à risque.</li>
+          <li><span class="feature-check">✦</span> Dashboards Comex — la gouvernance devient une décision business, pas IT.</li>
+          <li><span class="feature-check">✦</span> ROI moyen constaté sur POV : <strong>15 à 30× l'investissement</strong>.</li>
+        </ul>
+      </div>
+      <div style="background:var(--c-cream);border-radius:var(--r-xl);padding:32px;border:1px solid var(--c-grey200);">
+        <div style="font-size:13px;font-weight:700;color:var(--c-caption);text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">KVI® Dashboard — Temps réel</div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:white;border-radius:var(--r-md);border:1px solid var(--c-grey200);">
+            <div><div style="font-size:13px;font-weight:700;color:var(--c-heading);">RH — Données paie non conformes</div><div style="font-size:12px;color:var(--c-caption);">BER-HR-021 · 847 enregistrements</div></div>
+            <div style="font-size:20px;font-weight:900;color:#ef4444;">€4,2M</div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:white;border-radius:var(--r-md);border:1px solid var(--c-grey200);">
+            <div><div style="font-size:13px;font-weight:700;color:var(--c-heading);">Facturation — Écarts pricing</div><div style="font-size:12px;color:var(--c-caption);">BER-FIN-012 · 124 factures</div></div>
+            <div style="font-size:20px;font-weight:900;color:#f59e0b;">€892K</div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:white;border-radius:var(--r-md);border:1px solid var(--c-grey200);">
+            <div><div style="font-size:13px;font-weight:700;color:var(--c-heading);">RGPD — Données clients sans consentement</div><div style="font-size:12px;color:var(--c-caption);">BER-RGPD-001 · Exposition potentielle</div></div>
+            <div style="font-size:20px;font-weight:900;color:#ef4444;">€1,8M</div>
+          </div>
+          <div style="padding:14px;background:var(--c-blue700);border-radius:var(--r-md);display:flex;justify-content:space-between;align-items:center;">
+            <div style="font-size:13px;font-weight:700;color:white;">Total valeur KVI® identifiée</div>
+            <div style="font-size:24px;font-weight:900;color:var(--c-yellow);">€6,9M</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border:none;border-top:1px solid var(--c-grey200);margin:64px 0;" id="decrypt">
+
+    <!-- Modules additionnels -->
+    <div class="text-center" style="margin-bottom:40px;">
+      <span class="section-label">Modules additionnels</span>
+      <h2 class="section-title">Extensible selon vos besoins.</h2>
+    </div>
+    <div class="modules-grid">
+      <div class="module-card">
+        <div class="module-icon violet">🔐</div>
+        <div class="module-name">DeCRIPT®</div>
+        <div class="module-desc">Gouvernance des données non structurées — emails, PDF, contrats, documents RH. Classification automatique des données personnelles. Conformité RGPD native sur tous les flux documentaires de l'entreprise.</div>
+        <span class="module-tag">Module activable</span>
+      </div>
+      <div class="module-card">
+        <div class="module-icon teal">⚙️</div>
+        <div class="module-name">SAP Native</div>
+        <div class="module-desc">DEMS® connaît nativement les 30 000 tables SAP (S/4HANA, ECC). Aucune phase d'analyse du métamodèle. Déploiement 3× plus rapide dans un environnement SAP. Résultats en semaines.</div>
+        <span class="module-tag">Module activable</span>
+      </div>
+      <div class="module-card">
+        <div class="module-icon orange">🇪🇺</div>
+        <div class="module-name">Souveraineté & RGPD</div>
+        <div class="module-desc">Mesure l'indice de souveraineté des données par domaine et par fournisseur cloud. Financé par la Commission européenne. Conformité DORA et NIS2 intégrée. Tableau de bord DPO en temps réel.</div>
+        <span class="module-tag">Module activable</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Architecture technique ── -->
+<section class="section-dark">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label section-label-light">Architecture</span>
+      <h2 class="section-title section-title-white">Déployé dans votre environnement. Connecté à tout.</h2>
+      <p class="section-subtitle section-subtitle-white">DEMS® ne sort pas de votre périmètre. Vos données, vos règles, votre gouvernance — sous votre contrôle exclusif.</p>
+    </div>
+    <div class="stat-cards" style="margin-top:48px;">
+      <div class="stat-card">
+        <div class="stat-number" style="font-size:36px;">Cloud</div>
+        <div class="stat-title">Souverain by design</div>
+        <div class="stat-desc">Microsoft Azure, AWS, Google Cloud — dans votre tenant. Disponible sur Azure Marketplace et GCP Marketplace. Vos crédits prépayés utilisés directement.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="font-size:36px;">On-Prem</div>
+        <div class="stat-title">Zéro connectivité externe</div>
+        <div class="stat-desc">Déployable dans votre datacenter sans aucune connectivité sortante. Adapté aux environnements régulés : banque, défense, santé, énergie.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="font-size:36px;">API</div>
+        <div class="stat-title">REST native agentique</div>
+        <div class="stat-desc">100% des fonctionnalités exposées via API REST. Compatible Microsoft Copilot, Salesforce Agentforce, SAP Joule, LangChain, agents custom. Documentation OpenAPI complète.</div>
+      </div>
+    </div>
+    <div style="margin-top:40px;padding:28px;background:rgba(255,255,255,0.05);border-radius:var(--r-xl);border:1px solid rgba(255,255,255,0.1);">
+      <div style="font-size:13px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;">Sécurité enterprise — prêt à signer</div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--r-pill);padding:8px 16px;font-size:13px;color:white;font-weight:600;">SSO SAML 2.0</span>
+        <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--r-pill);padding:8px 16px;font-size:13px;color:white;font-weight:600;">LDAP</span>
+        <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--r-pill);padding:8px 16px;font-size:13px;color:white;font-weight:600;">Microsoft Entra (Azure AD)</span>
+        <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--r-pill);padding:8px 16px;font-size:13px;color:white;font-weight:600;">Zero Trust Network</span>
+        <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--r-pill);padding:8px 16px;font-size:13px;color:white;font-weight:600;">SLA 3 niveaux</span>
+        <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--r-pill);padding:8px 16px;font-size:13px;color:white;font-weight:600;">SaaS géré</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Éditions ── -->
+<section class="section" id="editions" style="background:var(--c-cream);">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Les éditions</span>
+      <h2 class="section-title">Choisissez votre périmètre.<br>Commencez en 4 semaines.</h2>
+      <p class="section-subtitle">Toutes les éditions incluent un POV gratuit de 4 semaines sur vos données réelles. Tarification sur devis selon périmètre et domaines métier.</p>
+    </div>
+    <div class="editions-grid">
+      <div class="edition-card">
+        <div class="edition-name">Essentiel</div>
+        <div class="edition-tagline">Pour un premier domaine métier. Gouvernance sémantique opérationnelle en 4 semaines.</div>
+        <ul class="edition-features">
+          <li><span class="ef-check">✓</span> SMM® — 1 domaine métier</li>
+          <li><span class="ef-check">✓</span> BER® — règles métier en langage naturel</li>
+          <li><span class="ef-check">✓</span> DEI® — audit continu quotidien</li>
+          <li><span class="ef-check">✓</span> KVI® — valorisation en euros</li>
+          <li><span class="ef-check">✓</span> API REST — connexion agents IA</li>
+          <li><span class="ef-check">✓</span> SSO SAML 2.0 / LDAP</li>
+          <li><span class="ef-check">✓</span> SLA Standard</li>
+        </ul>
+        <div class="edition-cta">
+          <a href="mailto:contact@semandata.com?subject=Édition Essentielle - Devis" class="btn btn-secondary">Demander un devis</a>
+        </div>
+      </div>
+      <div class="edition-card featured">
+        <div class="edition-badge">Le plus choisi</div>
+        <div class="edition-name">Enterprise</div>
+        <div class="edition-tagline">Multi-domaines. Modules avancés. Prêt pour l'AI Act et DORA dès le premier jour.</div>
+        <ul class="edition-features">
+          <li><span class="ef-check">✓</span> SMM® — domaines illimités</li>
+          <li><span class="ef-check">✓</span> BER® + standards réglementaires (RGPD, AI Act, DORA, NIS2)</li>
+          <li><span class="ef-check">✓</span> DEI® + KEI® — indices avancés</li>
+          <li><span class="ef-check">✓</span> KVI® — dashboards Comex</li>
+          <li><span class="ef-check">✓</span> API REST illimité</li>
+          <li><span class="ef-check">✓</span> Microsoft Entra / Zero Trust</li>
+          <li><span class="ef-check">✓</span> SAP Native inclus</li>
+          <li><span class="ef-check">✓</span> DeCRIPT® inclus</li>
+          <li><span class="ef-check">✓</span> SLA Critique</li>
+        </ul>
+        <div class="edition-cta">
+          <a href="mailto:contact@semandata.com?subject=Édition Enterprise - Devis" class="btn btn-primary">Demander un devis →</a>
+        </div>
+      </div>
+      <div class="edition-card">
+        <div class="edition-name">Framework</div>
+        <div class="edition-tagline">Pour les intégrateurs, ESN et cabinets de conseil. Licence Data Excellence Science® indépendante de la technologie.</div>
+        <ul class="edition-features">
+          <li><span class="ef-check">✓</span> Licence Data Excellence Science®</li>
+          <li><span class="ef-check">✓</span> Formation et certification partenaire</li>
+          <li><span class="ef-check">✓</span> Accès DEMS® en mode OEM</li>
+          <li><span class="ef-check">✓</span> Royalties 15–25% sur deals sourcés</li>
+          <li><span class="ef-check">✓</span> Support commercial dédié</li>
+          <li><span class="ef-check">✓</span> Co-marketing</li>
+        </ul>
+        <div class="edition-cta">
+          <a href="mailto:contact@semandata.com?subject=Licence Framework - Partenariat" class="btn btn-secondary">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-banner">
+  <div class="container">
+    <span class="section-label">Prochain pas</span>
+    <h2>Voyez DEMS® sur vos données réelles.</h2>
+    <p>Un POV de 4 semaines. ROI mesuré en euros avant toute décision. Zéro risque, zéro migration de données.</p>
+    <div class="cta-actions">
+      <a href="mailto:contact@semandata.com?subject=Demande de POV DEMS" class="btn btn-primary btn-lg">Demander un POV gratuit →</a>
+      <a href="solutions.html" class="btn btn-secondary btn-lg">Voir les solutions sectorielles</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Semandata</div>
+        <div class="footer-tagline">La couche de gouvernance sémantique pour les architectures agentiques d'entreprise. Powered by Data Excellence Science®.<br><br>Fondée 2007 · Genève, Suisse</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Plateforme</div>
+        <ul class="footer-links">
+          <li><a href="plateforme.html">DEMS®</a></li>
+          <li><a href="plateforme.html#smm">SMM®</a></li>
+          <li><a href="plateforme.html#ber">BER®</a></li>
+          <li><a href="plateforme.html#kvi">KVI®</a></li>
+          <li><a href="plateforme.html#decrypt">DeCRIPT®</a></li>
+          <li><a href="plateforme.html#editions">Éditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Solutions</div>
+        <ul class="footer-links">
+          <li><a href="solutions.html#finance">Finance & Banque</a></li>
+          <li><a href="solutions.html#industrie">Industrie & CPG</a></li>
+          <li><a href="solutions.html#sante">Santé</a></li>
+          <li><a href="solutions.html#automobile">Automobile</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Entreprise</div>
+        <ul class="footer-links">
+          <li><a href="entreprise.html">À propos</a></li>
+          <li><a href="entreprise.html#equipe">L'équipe</a></li>
+          <li><a href="mission.html">Notre mission</a></li>
+          <li><a href="temoignages.html">Témoignages</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@semandata.com">contact@semandata.com</a></li>
+          <li><a href="mailto:contact@semandata.com?subject=Demande de POV">Demander un POV</a></li>
+          <li><a href="gotomarket.html">Partenariats</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <div class="footer-copy">© 2026 Semandata. Tous droits réservés.</div>
+        <div class="footer-ip">DEMS®, SMM®, BER®, KVI®, DEI®, KEI®, DeCRIPT®, Data Excellence Science® sont des marques déposées.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
